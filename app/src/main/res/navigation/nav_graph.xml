@@ -13,7 +13,7 @@
         tools:layout="@layout/fragment_first" />
     <fragment
         android:id="@+id/srcondFragment"
-        android:name="com.example.homework7_3.SrcondFragment"
+        android:name="com.example.homework7_3.SecondFragment"
         android:label="fragment_srcond"
         tools:layout="@layout/fragment_second" />
 </navigation>
