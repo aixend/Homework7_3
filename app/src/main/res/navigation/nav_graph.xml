@@ -10,10 +10,19 @@
         android:id="@+id/firstFragment"
         android:name="com.example.homework7_3.FirstFragment"
         android:label="fragment_first"
-        tools:layout="@layout/fragment_first" />
+        tools:layout="@layout/fragment_first" >
+        <action
+            android:id="@+id/action_firstFragment_to_srcondFragment"
+            app:destination="@id/srcondFragment"
+            app:popUpTo="@id/srcondFragment"/>
+    </fragment>
     <fragment
         android:id="@+id/srcondFragment"
         android:name="com.example.homework7_3.SecondFragment"
         android:label="fragment_srcond"
-        tools:layout="@layout/fragment_second" />
+        tools:layout="@layout/fragment_second">
+    <argument
+        android:name="rm"
+        app:argType="com.example.homework7_3.Rm" />
+    </fragment>
 </navigation>
